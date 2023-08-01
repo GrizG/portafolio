@@ -27,4 +27,4 @@ El texto de la página web está escrito en español, sin embargo las clases rel
 ## Contacto
 Desarrollado por: Grisel Aguilar en Tecnolochicas PRO Summer Camp.
 
-[Malinali Becerril](https://www.linkedin.com/in/malibb/).
+[Grisel Aguilar](https://www.linkedin.com/in/griselayala/).
