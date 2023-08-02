@@ -14,7 +14,7 @@
 </head>
 
 <body class="container-fluid p-0">
-    <header class="d-flex justify-content-around py-3">
+    <header id="header" class="d-flex justify-content-around py-3">
         <ul class="nav nav-pills">
             <li class="nav-item"><a href="#perfil" class="nav-link" aria-current="page">Perfil</a></li>
             <li class="nav-item"><a href="#secciones" class="nav-link">Secciones</a></li>
@@ -24,15 +24,12 @@
         </ul>
     </header>
     <!-- Perfil (foto, descripción, imagen bonita) -->
-    <section id="perfil" class="container my-5">
+    <section class="container my-5">
         <article class="row p-4 pb-0 pt-lg-5 justify-content-center align-items-center rounded-3 border shadow-lg">
             <div class="col-lg-12 d-flex flex-column align-items-center justify-content-center px-3 px-lg-5 pt-lg-3">
                 <img id="img-perfil" src="imagenes\foto-perfil.jpeg" class="img-thumbnail rounded-circle" alt="Foto de perfil">
                 <h1 id="typewriter" class="display-6 fw-bold lh-1 text-body-emphasis"></h1>
                 <p class="lead">Desarrolladora Web / Estudiante de Ingeniería en Computación / Fan de las mascotas</p>
-            </div>
-            <div class="col-lg-6 d-flex flex-column align-items-center">
-                <img id="img-stack" src="imagenes/html5-css3-js-bootstrap.png" class="img-fluid" alt="Stack">
             </div>
             <!-- <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center py-3 py-lg-5 pt-lg-3">
                 <p>Lorem </p>
@@ -44,8 +41,10 @@
         <div class="row rounded-3 border shadow-lg">
             <div class="col-4 p-5">
                 <h5>Desarrollo Web</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur cupiditate ipsum rerum unde
-                    labore adipisci, illum placeat.</p>
+                <p>Diseño y maquetado de páginas web, con uso de: </p>
+                <div id="image" class="col-lg-6 d-flex flex-column align-items-center text-center">
+                    <img id="img-stack" src="imagenes/html5-css3-js-bootstrap.png" class="img-fluid" alt="Stack">
+                </div>
                 <p>
                     <span class="badge rounded-pill text-bg-primary">HTML</span>
                     <span class="badge rounded-pill text-bg-primary">CSS</span>
@@ -53,24 +52,22 @@
                 </p>
             </div>
             <div class="bg-primary col-4 p-5">
-                <h5>Articulos</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur cupiditate ipsum rerum unde
-                    labore adipisci, illum placeat.</p>
+                <h5>Línea de Acentuación</h5>
+                <p>Redes y Comunicaciones</p>
+                <div id="image" class="col-lg-6 d-flex flex-column align-items-center text-center">
+                    <img id="img-stack" src="imagenes\Cisco-Packet-Tracer.webp" class="img-fluid" alt="Stack">
+                </div>
                 <p>
-                    <span class="badge rounded-pill text-bg-dark">HTML</span>
-                    <span class="badge rounded-pill text-bg-dark">CSS</span>
-                    <span class="badge rounded-pill text-bg-dark">JS</span>
+                    <span class="badge rounded-pill text-bg-dark">Packet Tracer</span>
+                    <img src="" alt="">
                 </p>
             </div>
             <div class="col-4 p-5">
                 <h5>Estudiante</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur cupiditate ipsum rerum unde
-                    labore adipisci, illum placeat.</p>
-                <p>
-                    <span class="badge rounded-pill text-bg-primary">HTML</span>
-                    <span class="badge rounded-pill text-bg-primary">CSS</span>
-                    <span class="badge rounded-pill text-bg-primary">JS</span>
-                </p>
+                <p>Estudiante de Ingeniería en Computación en la <b>Facultad de Ingeniería</b> de la <i><b>Universidad Autónoma del Estado de México</b></i> </p>
+                <div id="image" class="col-lg-6 d-flex flex-column align-items-center text-center">
+                    <img id="img-stack" src="imagenes\cabecera.png" class="img-fluid" alt="Stack">
+                </div>
             </div>
         </div>
     </section>

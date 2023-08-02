@@ -7,15 +7,15 @@
 }
 
 .bg-primary{
-    background-color: #fd9843!important;
+    background-color: #BA7EF7!important;
 }
 
 .nav-link{
-    color: #653208!important;
+    color: #471975!important;
 }
 
 .text-bg-primary {
-    background-color: #fd9843!important;
+    background-color: #BA7EF7!important;
 }
 
 .titulo-proyecto{
@@ -50,7 +50,7 @@
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: #fd9843;
+    background-color: #9433F5;
     height: 5px;
 }
 
@@ -66,5 +66,17 @@
 }
 
 .btn-primary {
-    background-color: #fd9843!important;
+    background-color: #9433F5!important;
 }
+
+#header{
+    background: #BA7EF7!important;
+    font-size: 1.2rem;
+}
+
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
