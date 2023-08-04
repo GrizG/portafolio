@@ -14,22 +14,38 @@
 </head>
 
 <body class="container-fluid p-0">
-    <header id="header" class="d-flex justify-content-around py-3">
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#perfil" class="nav-link" aria-current="page">Perfil</a></li>
-            <li class="nav-item"><a href="#secciones" class="nav-link">Secciones</a></li>
-            <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
-            <li class="nav-item"><a href="#testimonios" class="nav-link">Testimonios</a></li>
-            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
-        </ul>
+    <header id="header" class="d-flex justify-content-md-center py-3 bg-primary">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler bg-white border-secondary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold text-white">
+                        <li class="nav-item"><a href="#perfil" class="nav-link text-white"
+                                aria-current="page">Perfil</a></li>
+                        <li class="nav-item"><a href="#secciones" class="nav-link text-white">Secciones</a></li>
+                        <li class="nav-item"><a href="#proyectos" class="nav-link text-white">Proyectos</a></li>
+                        <li class="nav-item"><a href="#testimonios" class="nav-link text-white">Testimonios</a></li>
+                        <li class="nav-item"><a href="#contacto" class="nav-link text-white">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+
     <!-- Perfil (foto, descripción, imagen bonita) -->
-    <section class="container my-5">
-        <article class="row p-4 pb-0 pt-lg-5 justify-content-center align-items-center rounded-3 border shadow-lg">
+    <section id="perfil" class="container my-5">
+        <article
+            class="row px-4 pt-4 pb-0 pt-lg-5 justify-content-center align-items-center border shadow-lg rounded-3">
             <div class="col-lg-12 d-flex flex-column align-items-center justify-content-center px-3 px-lg-5 pt-lg-3">
-                <img id="img-perfil" src="imagenes\foto-perfil.jpeg" class="img-thumbnail rounded-circle" alt="Foto de perfil">
+                <img id="img-perfil" src="imagenes\foto-perfil.jpeg" class="img-thumbnail rounded-circle"
+                    alt="Foto de perfil">
                 <h1 id="typewriter" class="display-6 fw-bold lh-1 text-body-emphasis"></h1>
-                <p class="lead">Desarrolladora Web / Estudiante de Ingeniería en Computación / Fan de las mascotas</p>
+                <p class="lead text-center">Desarrolladora Web / Estudiante de Ingeniería en Computación / Fan de las
+                    mascotas</p>
             </div>
             <!-- <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center py-3 py-lg-5 pt-lg-3">
                 <p>Lorem </p>
@@ -37,9 +53,9 @@
         </article>
     </section>
     <!-- Secciones de mi página / links a otras páginas -->
-    <section id="secciones" class="container my-5 text-center">
-        <div class="row rounded-3 border shadow-lg">
-            <div class="col-4 p-5">
+    <section id="secciones" class="container my-5 text-center d-flex flex-column">
+        <div class="row rounded-3 border shadow-lg row-cols-1 row-cols-lg-3">
+            <div class="col col-lg-4 p-5">
                 <h5>Desarrollo Web</h5>
                 <p>Diseño y maquetado de páginas web, con uso de: </p>
                 <div id="image" class="col-lg-6 d-flex flex-column align-items-center text-center">
@@ -51,7 +67,7 @@
                     <span class="badge rounded-pill text-bg-primary">JS</span>
                 </p>
             </div>
-            <div class="bg-primary col-4 p-5">
+            <div class="bg-primary col col-lg-4 p-5">
                 <h5>Línea de Acentuación</h5>
                 <p>Redes y Comunicaciones</p>
                 <div id="image" class="col-lg-6 d-flex flex-column align-items-center text-center">
@@ -62,9 +78,10 @@
                     <img src="" alt="">
                 </p>
             </div>
-            <div class="col-4 p-5">
+            <div class="col col-lg-4 p-5">
                 <h5>Estudiante</h5>
-                <p>Estudiante de Ingeniería en Computación en la <b>Facultad de Ingeniería</b> de la <i><b>Universidad Autónoma del Estado de México</b></i> </p>
+                <p>Estudiante de Ingeniería en Computación en la <b>Facultad de Ingeniería</b> de la <i><b>Universidad
+                            Autónoma del Estado de México</b></i> </p>
                 <div id="image" class="col-lg-6 d-flex flex-column align-items-center text-center">
                     <img id="img-stack" src="imagenes\cabecera.png" class="img-fluid" alt="Stack">
                 </div>
@@ -74,10 +91,10 @@
     <!-- Proyectos -->
     <section id="proyectos" class="container my-5">
         <div class="row rounded-3 border shadow-lg">
-            <div class="row py-3 justify-content-center text-center">
+            <div class="row py-3 justify-content-center text-center fw-bold">
                 <h2>Proyectos</h2>
             </div>
-            <div class="row row-cols-1 row-cols-lg-3 m-0 align-items-stretch g-4">
+            <div class="row row-cols-1 row-cols-lg-3 m-0 align-items-center g-4 pb-3">
                 <div class="col">
                     <div id="proyecto-1" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
                         <div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-1">
@@ -116,7 +133,7 @@
                 <div class="col">
                     <div id="proyecto-1" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
                         <div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-1">
-                            <h4 class="titulo-proyecto pt-5 mt-3 mb-2 display-6 lh-1 fw-bold ">Proyecto 6</h4>
+                            <h4 class="titulo-proyecto pt-5 mt-3 mb-2 display-6 lh-1 fw-bold ">Nombre Proyecto</h4>
                         </div>
                     </div>
                 </div>
@@ -200,24 +217,22 @@
     </section>
     <!-- Contacto -->
     <footer id="contacto" class="bg-dark text-secondary py-5 text-center">
-        <div class="py-5">
-            <h1 id="contactame" data-bs-toggle="modal" data-bs-target="#modal-contactame"
-                class="display-5 fw-bold text-white mb-5">Contáctame</h1>
-            <div class="col-lg-6 mx-auto">
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
-                        <i class="icono bi bi-github"></i>
-                    </a>
-                    <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
-                        <i class="icono bi bi-linkedin"></i>
-                    </a>
-                    <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
-                        <i class="icono bi bi-instagram"></i>
-                    </a>
-                    <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
-                        <i class="icono bi bi-twitter"></i>
-                    </a>
-                </div>
+        <h1 id="contactame" data-bs-toggle="modal" data-bs-target="#modal-contactame" class="fw-bold text-white mb-5">
+            Contáctame</h1>
+        <div>
+            <div class="row mx-3 bg-dark d-flex justify-content-center">
+                <a class="col-3 col-md-1" href="https://github.com/GrizG" target="_blank" rel="noopener noreferrer">
+                    <i class="icono bi bi-github"></i>
+                </a>
+                <a class="col-3 col-md-1" href="https://www.linkedin.com/in/griselayala/" target="_blank" rel="noopener noreferrer">
+                    <i class="icono bi bi-linkedin"></i>
+                </a>
+                <a class="col-3 col-md-1" href="http://www.google.com" target="_blank" rel="noopener noreferrer">
+                    <i class="icono bi bi-instagram"></i>
+                </a>
+                <a class="col-3 col-md-1" href="http://www.google.com" target="_blank" rel="noopener noreferrer">
+                    <i class="icono bi bi-twitter"></i>
+                </a>
             </div>
         </div>
     </footer>

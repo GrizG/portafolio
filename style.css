@@ -1,17 +1,14 @@
+:root
+{
+    --bs-primary-rgb: 186,126,247;
+}
+
 #img-perfil{
     width: 150px;
 }
 
 #img-stack{
     width: 200px;
-}
-
-.bg-primary{
-    background-color: #BA7EF7!important;
-}
-
-.nav-link{
-    color: #471975!important;
 }
 
 .text-bg-primary {
@@ -70,7 +67,6 @@
 }
 
 #header{
-    background: #BA7EF7!important;
     font-size: 1.2rem;
 }
 
